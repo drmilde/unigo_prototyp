@@ -9,18 +9,22 @@ class FahrtHinzufuegenScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SvgScaffoldWidget(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          _buildGetXDialog(context),
-          ElevatedButton(
-            onPressed: () async {
-              var value = await _showMyDialog(context);
-              print(value);
-            },
-            child: Text("material world"),
-          ),
-        ],
+      child: Center(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            _buildGetXDialog(context),
+            SizedBox(height:10),
+            ElevatedButton(
+              onPressed: () async {
+                var value = await _showMyDialog(context);
+                print(value);
+              },
+              child: Text("material world"),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -36,13 +40,18 @@ class FahrtHinzufuegenScreen extends StatelessWidget {
               Radius.circular(15.0),
             ),
           ),
-          titlePadding: EdgeInsets.all(20),
+          titlePadding: EdgeInsets.only(top:20),
           titleTextStyle: GoogleFonts.inter(
             color: Colors.black,
             fontSize: 20,
           ),
-          title: Text(
-            'Fahrt freigeben',
+          title: Container(
+            width: double.infinity,
+            child: Center(
+              child: Text(
+                'Fahrt freigeben',
+              ),
+            ),
           ),
           contentPadding: EdgeInsets.all(0),
           content: SingleChildScrollView(
