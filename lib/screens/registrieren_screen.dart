@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class RegisrierenScreen extends StatelessWidget {
-  const RegisrierenScreen({Key? key}) : super(key: key);
+class RegistrierenScreen extends StatelessWidget {
+  const RegistrierenScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
