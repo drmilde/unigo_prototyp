@@ -12,10 +12,13 @@ class SvgScaffoldWidget extends StatelessWidget {
       body: Stack(
         children: [
           Container(
-              child: SvgPicture.asset(
-            "assets/background.svg",
-            fit: BoxFit.cover,
-          )),
+              width: MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.height,
+              child:SvgPicture.asset(
+                "assets/background.svg",
+                fit: BoxFit.cover,
+              )
+          ),
           child
         ],
       ),

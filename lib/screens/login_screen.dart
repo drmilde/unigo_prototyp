@@ -8,55 +8,60 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SvgScaffoldWidget(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          SizedBox(height: 100),
-          _buildLogo(),
-          SizedBox(
-            height: 120,
-          ),
-          _buildUeberschrift(),
-          SizedBox(
-            height: 70,
-          ),
-          _buildEingabe("E-Mail Adresse"),
-          SizedBox(
-            height: 50,
-          ),
-          _buildEingabe("Passwort"),
-          SizedBox(
-            height: 8,
-          ),
-          Text(
-            "Passwort vergessen?",
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
+      child: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            SizedBox(height: 100),
+            _buildLogo(),
+            SizedBox(
+              height: 120,
             ),
-          ),
-          SizedBox(
-            height: 130,
-          ),
-          GestureDetector(
-            onTap: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => HomeScreen(),
-                  ));
-            },
-            child: _buildAnmeldeButton(),
-          ),
-          SizedBox(
-            height: 8,
-          ),
-          Text(
-            "Registrieren",
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
+            _buildUeberschrift(),
+            SizedBox(
+              height: 70,
             ),
-          ),
-        ],
+            _buildEingabe("E-Mail Adresse"),
+            SizedBox(
+              height: 50,
+            ),
+            _buildEingabe("Passwort"),
+            SizedBox(
+              height: 8,
+            ),
+            Text(
+              "Passwort vergessen?",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(
+              height: 130,
+            ),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => HomeScreen(),
+                    ));
+              },
+              child: _buildAnmeldeButton(),
+            ),
+            SizedBox(
+              height: 8,
+            ),
+            Text(
+              "Registrieren",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(
+              height: 24,
+            ),
+          ],
+        ),
       ),
     );
   }

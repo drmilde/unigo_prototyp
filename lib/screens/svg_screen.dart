@@ -10,6 +10,8 @@ class SvgScreen extends StatelessWidget {
       body: Stack(
         children: [
           Container(
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height,
             child:SvgPicture.asset(
               "assets/background.svg",
               fit: BoxFit.cover,
