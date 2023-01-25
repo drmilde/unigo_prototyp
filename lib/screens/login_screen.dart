@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:unigo_prototyp/screens/home_screen.dart';
 import 'package:unigo_prototyp/widgets/svg_scaffold_widget.dart';
 
@@ -118,11 +119,15 @@ class LoginScreen extends StatelessWidget {
 
   Container _buildLogo() {
     return Container(
-      width: 100,
-      height: 70,
-      color: Color.fromARGB(255, 217, 217, 217),
+      width: 225,
+      height: 60,
+      //color: Color.fromARGB(255, 217, 217, 217),
       child: Center(
-        child: Text("Logo"),
+        child: SvgPicture.asset(
+          "assets/RZ_Logo_UniGo.svg",
+          fit: BoxFit.fitWidth,
+        )
+        ,
       ),
     );
   }
