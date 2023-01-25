@@ -3,8 +3,8 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:unigo_prototyp/widgets/svg_scaffold_widget.dart';
 
-class FahrtHinzufuegenScreen extends StatelessWidget {
-  const FahrtHinzufuegenScreen({Key? key}) : super(key: key);
+class DialogTestScreen extends StatelessWidget {
+  const DialogTestScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -44,6 +44,7 @@ class FahrtHinzufuegenScreen extends StatelessWidget {
           titleTextStyle: GoogleFonts.inter(
             color: Colors.black,
             fontSize: 20,
+            fontWeight: FontWeight.normal,
           ),
           title: Container(
             width: double.infinity,
@@ -91,12 +92,12 @@ class FahrtHinzufuegenScreen extends StatelessWidget {
                     ),
                     child: Center(
                         child: Text(
-                      "Alles klar",
-                      style: GoogleFonts.inter(
-                        fontSize: 16,
-                        color: Colors.black,
-                      ),
-                    )),
+                          "Alles klar",
+                          style: GoogleFonts.inter(
+                            fontSize: 16,
+                            color: Colors.black,
+                          ),
+                        )),
                   ),
                 ),
                 SizedBox(height: 16),
@@ -159,12 +160,12 @@ class FahrtHinzufuegenScreen extends StatelessWidget {
                     ),
                     child: Center(
                         child: Text(
-                      "Alles klar",
-                      style: GoogleFonts.inter(
-                        fontSize: 16,
-                        color: Colors.black,
-                      ),
-                    )),
+                          "Alles klar",
+                          style: GoogleFonts.inter(
+                            fontSize: 16,
+                            color: Colors.black,
+                          ),
+                        )),
                   ),
                 ),
               ],

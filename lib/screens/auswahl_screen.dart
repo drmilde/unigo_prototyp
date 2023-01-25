@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:unigo_prototyp/screens/fahrt_hinzufuegen_screen.dart';
+import 'package:unigo_prototyp/screens/dialog_test_screen.dart';
+import 'package:unigo_prototyp/screens/fahrten/fahrt_hinzufuegen_screen.dart';
 import 'package:unigo_prototyp/screens/home_screen.dart';
 import 'package:unigo_prototyp/screens/login_screen.dart';
 import 'package:unigo_prototyp/screens/registrieren_screen.dart';
@@ -17,11 +18,13 @@ class AuswahlScreen extends StatelessWidget {
         children: [
           _buildRouteButton(context, "HomeScreen", HomeScreen()),
           _spacer(),
-          _buildRouteButton(context, "Dialog Test", FahrtHinzufuegenScreen()),
+          _buildRouteButton(context, "Dialog Test", DialogTestScreen()),
           _spacer(),
           _buildRouteButton(context, "Login Screen", LoginScreen()),
           _spacer(),
           _buildRouteButton(context, "Registrieren Screen", RegistrierenScreen()),
+          _spacer(),
+          _buildRouteButton(context, "Fahrt hinzufügen", FahrtHinzufuegenScreen()),
         ],
       ),
     ));
